@@ -37,13 +37,26 @@ const Pie = () => {
       <h1>hello</h1>
       <PieChart
         className="chart_part"
+        //donut whole
+        lineWidth="70"
+        //startAngle="360"
+        //lengthAngle="360"
+        //totalValue="500"
+        //paddingAngle="2"
+        //segmentsShift="2"
+        //viewBoxSize="[20,20]"
+        //center="[50,50]"
+        //radius="50"
+
         data={[
           {
-            title: "Group1",
+            title: "Group One",
             value: chartValues.groupOne,
             color: "#E386",
+            label: "Group one",
+            labelPosition: "50",
           },
-          { title: "Group2", value: chartValues.groupTwo, color: "#32a8" },
+          { title: "Group Two", value: chartValues.groupTwo, color: "#32a8" },
         ]}
       />
     </div>
