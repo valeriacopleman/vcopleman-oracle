@@ -48,13 +48,20 @@ const Pie = () => {
         //center="[50,50]"
         //radius="50"
 
+        // label={(chartValues) =>
+        //   5 | "Group One" | React.ReactElement | undefined | null
+        // }
         data={[
           {
             title: "Group One",
             value: chartValues.groupOne,
             color: "#E386",
-            label: "Group one",
-            labelPosition: "50",
+            //label: ,
+            labelPosition: "30",
+            labelStyle: "#f0f8ff",
+            animate: true,
+            animationDuration: 5,
+            animationEasing: "transition-timing-function: ease;",
           },
           { title: "Group Two", value: chartValues.groupTwo, color: "#32a8" },
         ]}
