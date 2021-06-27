@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { PieChart } from "react-minimal-pie-chart";
 
-const App = () => {
+const Pie = () => {
   const [loading, setLoading] = useState(true);
   const [chartValues, setChartValues] = useState({ groupOne: 0, groupTwo: 0 });
 
@@ -50,4 +50,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Pie;
