@@ -45,10 +45,12 @@ const Pie = () => {
         segmentsShift=".1"
         //center="[50,50]"
         //radius="50"
-
-        // label={(chartValues) =>
-        //   5 | "Group One" | React.ReactElement | undefined | null
-        // }
+        //segmentsStyle="#7ff"
+        segmentsTabIndex="100"
+        label={(chartValues) =>
+          5 | "Group One" | React.ReactElement | undefined | null
+        }
+        labelPosition="70"
         // onMouseOver={(e, segmentIndex) => void}
         data={[
           {
