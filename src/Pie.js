@@ -34,34 +34,27 @@ const Pie = () => {
 
   return (
     <div>
-      <h1>hello</h1>
+      <h1 className="App">Pie Chart</h1>
       <PieChart
-        className="chart_part"
         //donut whole
         lineWidth="70"
         //startAngle="360"
         //lengthAngle="360"
         //totalValue="500"
         //paddingAngle="2"
-        //segmentsShift="2"
-        //viewBoxSize="[20,20]"
+        segmentsShift=".1"
         //center="[50,50]"
         //radius="50"
 
         // label={(chartValues) =>
         //   5 | "Group One" | React.ReactElement | undefined | null
         // }
+        // onMouseOver={(e, segmentIndex) => void}
         data={[
           {
             title: "Group One",
             value: chartValues.groupOne,
             color: "#E386",
-            //label: ,
-            labelPosition: "30",
-            labelStyle: "#f0f8ff",
-            animate: true,
-            animationDuration: 5,
-            animationEasing: "transition-timing-function: ease;",
           },
           { title: "Group Two", value: chartValues.groupTwo, color: "#32a8" },
         ]}
